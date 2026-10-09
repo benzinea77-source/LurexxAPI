@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "darcobfuscator/**"
+    }
+  },
+  "rewrites": [
+    { "source": "/:vpath*", "destination": "/api/index?vpath=:vpath*" }
+  ]
+}
